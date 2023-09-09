@@ -1,0 +1,13 @@
+{% extends 'pages/base.html' %}
+{% block title %}{{post.ten}}{% endblock %}
+{% block content %}
+<div align="center">
+    <div class="card" style="width: 40rem;">
+        <h5 class="card-title" style="font-size: 3rem; ">{{post.ten}}</h5>
+        <img src="{{post.anh.url}}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text" style="font-size: 1rem;">{{post.noidung}}</p>
+        </div>
+    </div>
+</div>
+{% endblock  %}
